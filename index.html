@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge",chrome=1>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-    <title>9jaPolls</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>9ja Poll</title>
 </head>
+
 <body>
-    <!--Nav Bar Section-->
-    <div class="nav-bar">
-        <div class="logo"><img src="assets/images/logo.png"> <img src="assets/images/9japolls.png"></div>
-        <button class="hamburger" id="hamburger">
-            <i class="fa fa-bars"></i>
-        </button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#HomePage">Home</a></li>
-            <li><a href="#PostsPage">Posts</a></li>
-            <li><a href="#ProfilePage">Profile</a></li>
-            <li><a href="#FAQpage">FAQ</a></li>
-            <li><a href="#AboutUsPage">About Us</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav>
+            <a href="">
+                <div class="brand">
+                    <img src="./assets/icons/brand-icon.svg" alt="brand-icon" />
+                    <p>9japolls</p>
+                </div>
+            </a>
+        </nav>
+    </header>
 
+    <section class="content">
+        <div class="left-content">
+            <h3>See your favourite candidates</h3>
+            <p>
+                With 9ja polls, you can connect with your favourite political aspirants for free.
+            </p>
+            <button>Sign Up</button>
+            <p>
+                Already have and account?
+                <span class="link"><a href="">Login</a></span>
+            </p>
+        </div>
+        <div class="right-content">
+            <img src="./assets/icons/map.svg" alt="map" class="map" />
+        </div>
+        <div class="group">
+            <img src="assets/images/group_254.svg" alt="electorates" />
+        </div>
+    </section>
 
+    <footer>
+        <div class="link">
+            <a href="">
+                <div class="brand">
+                    <img src="./assets/icons/logov2.svg" alt="" />
+                    <p>9japolls</p>
+                </div>
+            </a>
+            <a href="#" id="mgt">About us</a>
+            <a href="#">Our Team</a>
+        </div>
 
+        <div class="link">
+            <h4>Help & Support</h4>
+            <a href="#">FAQ's</a>
+            <a href="#">Contact US</a>
+        </div>
 
-    <!-- Footer Section -->    
-    <footer>                     
-           <div class="footertop">               
-                <div class="desc"><img src="assets/images/logo white.png">9japolls</div>
-               <a href="#AboutUsPage">About Us</a>
-               <a href="#ourteams">Our Teams</a>               
-           </div>
-            
-           <div class="footertop">
-                <div class="desc">Help & Support</div>
-                 <a href="#FAQpage">FAQs</a>
-                 <a href="#ContactUsPage">Contact Us</a>
+        <div class="link">
+            <h4>Link</h4>
+            <a href="">Terms and Condition</a>
+            <a href="">Privacy Policy</a>
+        </div>
+        <div class="link">
+            <h4>Follow Us</h4>
+            <div class="socials">
+                <a href="https://twitter.com/hakinrinmadey">
+                    <img src="./assets/icons/twitter.svg" alt="" /></a>
+                <a href=""><img src="./assets/icons/linkedin.svg" alt="" /></a>
+                <a href=""><img src="./assets/icons/fb.svg" alt="" /></a>
             </div>
-           
-            <div class="footertop">
-               <div class="desc" >Legal</div>
-                 <a href="#Terms&ConditionsPage">Terms and Conditions</a>
-                 <a href="#PrivacyPolicyPage">Privacy policy</a>
-            </div>
-
-           <div class="footertop">
-                <div class="desc">Follow Us</div>             
-                 <a href="#TwitterSite" class="fa fa-twitter"></a>
-                 <a href="#LinkedInSite" class="fa fa-linkedin"></a>
-                 <a href="#FacebookSite" class="fa fa-facebook"></a>                
-           </div>        
+        </div>
     </footer>
 
-
-    <script src="assets/script.js"></script>
+    <script src="assets/app.js"></script>
 </body>
+
 </html>
