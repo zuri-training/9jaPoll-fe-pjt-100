@@ -1,7 +1,25 @@
+const input = document.getElementById("edit-post")
+const count = document.getElementById("number-count")
 const buttons = document.querySelectorAll(".buttons");
 textField.document.designMode = "On"
 
 
+// input.addEventListener( "keyup",  function(e) {
+//     wordCounter(e.target.value)
+// } )
+
+
+// function wordCounter(text) {
+//     var text = input.value;
+//     var wordCount = 0;
+//     for (var i = 0; i <= text.length; i++) {
+//       if (text.charAt(i) == ' ') {
+//          wordCount++;
+//       }
+//     }
+//     count.innerText = wordCount;
+// }
+  
 
 buttons.forEach( button => button.addEventListener( "click", () =>{
     let cmd = button.getAttribute("data-cmd");
@@ -31,4 +49,6 @@ buttons.forEach( button => button.addEventListener( "click", () =>{
         textField.document.execCommand( cmd, false, null );
     }
 }  ) )
+
+
 
