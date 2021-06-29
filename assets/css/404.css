@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    padding: 3rem 3rem;
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    padding: 0 25rem;
+}
+
+.input input {
+    border: 1px solid #00A86E;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.25rem 1.25rem 1.25rem 7rem;
+}
+
+.input input::placeholder {
+    padding-left: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.input img {
+    position: absolute;
+    top: .3rem;
+    left: 27rem;
+}
+
+.error {
+    font-size: 20rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 1rem;
+    text-shadow: 13px 2px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 20rem;
+}
+
+.text {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1.25rem 6.5rem;
+    background-color: rgba(31, 237, 163, 1);
+    border-radius: 15px;
+    margin-top: 8rem;
+}
+
+@media (max-width: 467px) {
+    .error {
+        font-size: 12rem;
+    }
+
+    .input {
+        padding: 0 4rem;
+    }
+
+    .input img {
+        left: 6rem;
+    }
+}
+
+@media (min-width: 468px) and (max-width: 761px) {
+    .input {
+        padding: 0 8rem;
+    }
+
+    .input img {
+        left: 10rem;
+    }
+}
+
+@media (min-width: 762px) and (max-width: 1024px) {
+    .input {
+        padding: 0 10rem;
+    }
+
+    .input img {
+        left: 12rem;
+    }
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9ja Poll</title>
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="signup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./assets/images/logo.png" alt="" class="logo-img" />
+        <p>9japolls</p>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left">
+        <h2>Create an Account</h2>
+        <p class="big-p">Enter your details to get started</p>
+        <form id="form" method="POST">
+          <div class="parent-div">
+            <div class="child-div formcontrol">
+              <p class="small-p">First name</p>
+              <input
+                type="text"
+                placeholder="Enter your first name"
+                id="firstname"
+                required="required"
+              />
+              <small class="small">Error Message</small>
+            </div>
+            <div class="child-div formcontrol">
+              <p class="small-p">Last name</p>
+              <input
+                type="text"
+                placeholder="Enter your last name"
+                id="lastname"
+                required="required"
+              />
+              <small class="small">Error Message</small>
+            </div>
+          </div>
+          <div class="formcontrol">
+            <p class="small-p">Email</p>
+            <input
+              type="email"
+              name=""
+              placeholder="example@gmail.com"
+              id="email"
+              required="required"
+            />
+            <small class="small">Error Message</small>
+          </div>
+          <div class="parent-div">
+            <div class="child-div formcontrol">
+              <p class="small-p">Password</p>
+              <div class="password-main">
+                <input
+                  oninput="strengthChecker()"
+                  type="password"
+                  name=""
+                  placeholder="xxxxxxxxxxx"
+                  id="password"
+                  required="required"
+                />
+                <img
+                  src="./assets/images/eye.png"
+                  alt=""
+                  class="password-eye"
+                  id="show"
+                  onclick="myFunction()"
+                />
+                <img
+                  src="./assets/images/eyeslash.png"
+                  alt=""
+                  class="password-eye"
+                  id="hide"
+                  onclick="myFunction()"
+                />
+              </div>
+              <small class="small">Error Message</small>
+            </div>
+            <div class="child-div formcontrol">
+              <p class="small-p">Confirm Password</p>
+              <div class="password-main">
+                <input
+                  type="password"
+                  name=""
+                  placeholder="xxxxxxxxxxx"
+                  id="confirmpassword"
+                  required="required"
+                />
+                <img
+                  src="./assets/images/eye.png"
+                  alt=""
+                  class="password-eye"
+                  id="open"
+                  onclick="validate()"
+                />
+                <img
+                  src="./assets/images/eyeslash.png"
+                  alt=""
+                  class="password-eye"
+                  id="close"
+                  onclick="validate()"
+                />
+              </div>
+              <small class="small">Error Message</small>
+            </div>
+          </div>
+          <div id="parentstrength">
+            <p class="small-p">Password Strength</p>
+            <div id="divstrength">
+              <div class="weak fair medium passwordstrength"></div>
+              <div class="fair medium passwordstrength"></div>
+              <div class="medium passwordstrength"></div>
+              <div class="passwordstrength"></div>
+            </div>
+            <p id="green">Strong</p>
+          </div>
+          <p class="small-p">
+            By clicking Sign up, you agree to our <a href="#">Terms</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+          <input type="submit" value="Create Account" class="button" />
+        </form>
+        <p class="big-p">
+          Already have an account? <a href="signin.html">Sign in</a>
+        </p>
+      </div>
+      <div class="left signup-div">
+        <img src="./assets/images/signup-img.png" alt="" class="signup-img" />
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footertop">
+        <div class="desc"><img src="./assets/images/logo white.png" />9japolls</div>
+        <a href="#AboutUsPage">About Us</a>
+        <a href="#ourteams">Our Teams</a>
+      </div>
+
+      <div class="footertop">
+        <div class="desc">Help & Support</div>
+        <a href="#FAQpage">FAQs</a>
+        <a href="#ContactUsPage">Contact Us</a>
+      </div>
+
+      <div class="footertop">
+        <div class="desc">Legal</div>
+        <a href="#Terms&ConditionsPage">Terms and Conditions</a>
+        <a href="#PrivacyPolicyPage">Privacy policy</a>
+      </div>
+
+      <div class="footertop">
+        <div class="desc">Follow Us</div>
+        <a href="#TwitterSite" class="fa fa-twitter"></a>
+        <a href="#LinkedInSite" class="fa fa-linkedin"></a>
+        <a href="#FacebookSite" class="fa fa-facebook"></a>
+      </div>
+    </footer>
+  </body>
+</html>

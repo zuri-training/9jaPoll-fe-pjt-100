@@ -1,0 +1,359 @@
+/*Contact Us Page*/
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    background: #ffffff;
+    color: #333333;
+  }
+  
+  header {
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+  }
+  
+  nav {
+    display: inline-block;
+    width: 90%;
+    justify-content: space-between;
+  }
+  
+  .logo-img {
+    margin: 13px 20px;
+    float: left;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .left {
+    width: 43%;
+    padding: 0 20px;
+    float: left;
+  }
+  
+  h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.06px;
+    line-height: 49px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .big-p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .small-p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  input {
+    padding-left: 10px;
+  }
+
+.contact-parent {
+    height: 430px;
+    padding-left: 150px;
+  }
+  
+  .contact-child {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .contact-p {
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.8px;
+    line-height: 15px;
+  }
+  
+  .contactbig-p {
+      color: #000000;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  
+  .parent-info {
+    margin-top: 70px;
+    padding: 10px;
+  }
+  
+  .contact-info {
+      display: inline;
+      justify-content: space-around;
+  }
+  
+  .contactform-div {
+    font-family: "Roboto", sans-serif;
+    background: #e5e5e5;
+    height: 600px;
+    width: 530px;
+    position: relative;
+    padding: 20px;
+    margin: 0 120px;
+    border-radius: 5px;
+  }
+  
+  #contact-name {
+    background: #f2f2f2;
+    border-radius: 5px;
+    border: none;
+    width: 520px;
+    height: 40px;
+  }
+  
+  #contact-email {
+    background: #f2f2f2;
+    border-radius: 5px;
+    border: none;
+    width: 520px;
+    height: 40px;
+  }
+  
+  #contact-message {
+    font-family: "Roboto";
+    background: #f2f2f2;
+    border-radius: 5px;
+    border: none;
+    width: 520px;
+    height: 190px;
+  }
+
+  .button {
+    background: #1feda3;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    width: 515px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-footer {
+    background: #0a8057;
+    height: 346px;
+  }
+  
+  /*Contact Us Page Media Query*/
+  
+  @media (max-width: 1200px) {
+    .contact-parent {
+      height: 430px;
+      padding-left: 150px;
+    }
+    
+    .contact-child {
+      display: flex;
+      margin: 15px;
+    }
+  
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 45px;
+    }
+    
+    .contact-p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    
+    .contactbig-p {
+        font-size:15px;
+        line-height: 17px;
+      }
+    
+    .parent-info {
+      margin-top: 70px;
+      padding: 10px;
+    }
+    
+    .contact-info {
+        display: inline;
+        justify-content: space-around;
+    }
+    
+    .contactform-div {
+      height: 500px;
+      width: 430px;
+      position: relative;
+      padding: 15px;
+      margin: 0 100px;
+    }
+    
+    #contact-name {
+      font-family: "Roboto";
+      width: 420px;
+    }
+    
+    #contact-email {
+      font-family: "Roboto";
+      width: 420px;
+    }
+    
+    #contact-message {
+      font-family: "Roboto";
+      width: 420px;
+      height: 150px;
+    }
+  
+    .button {
+      width: 430px;
+    }
+    
+    .contact-footer {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .contact-parent {
+      height: 400px;
+      padding-left: 150px;
+    }
+    
+    .contact-child {
+      display: flex;
+      margin: 15px;
+    }
+  
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 45px;
+    }
+    
+    .contact-p {
+      font-size: 11px;
+      line-height: 14px;
+    }
+    
+    .contactbig-p {
+        font-size:14px;
+        line-height: 16px;
+      }
+    
+    .parent-info {
+      margin-top: 50px;
+      padding: 8px;
+    }
+    
+    .contact-info {
+        display: inline;
+        justify-content: space-around;
+    }
+    
+    .contactform-div {
+      height: 450px;
+      width: 380px;
+      position: relative;
+      padding: 12px;
+      margin: 0 80px;
+    }
+    
+    #contact-name {
+      font-family: "Roboto";
+      width: 370px;
+    }
+    
+    #contact-email {
+      font-family: "Roboto";
+      width: 370px;
+    }
+    
+    #contact-message {
+      font-family: "Roboto";
+      width: 370px;
+      height: 120px;
+    }
+  
+    .button {
+      width: 380px;
+    }
+    
+    .contact-footer {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+  
+    .contact-parent {
+      padding-left: 100px;
+    }
+  
+    .contact-child {
+      display: inline-block;
+      margin: 15px;
+      justify-content: left;
+      align-items: left;
+    }
+  
+    .contact-footer {
+      display: none;
+    }
+  
+    .contactform-div {
+      height: 450px;
+      width: 380px;
+      position: relative;
+      padding: 12px;
+      margin: 20px 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+  
+    .contact-parent {
+      padding-left: 50px;
+    }
+  
+    .contactform-div {
+      height: 420px;
+      width: 320px;
+      position: relative;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    #contact-name {
+      font-family: "Roboto";
+      width: 300px;
+    }
+    
+    #contact-email {
+      font-family: "Roboto";
+      width: 300px;
+    }
+    
+    #contact-message {
+      font-family: "Roboto";
+      width: 300px;
+      height: 100px;
+    }
+  
+    .button {
+      width: 310px;
+    }
+  }

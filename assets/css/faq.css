@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    padding: 3rem 30rem;
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+
+.input input {
+    border: 1px solid #00A86E;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.25rem 1.25rem 1.25rem 7rem;
+}
+
+.input input::placeholder {
+    padding-left: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.input img {
+    position: absolute;
+    top: .3rem;
+    left: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.question {
+    margin-bottom: .8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.question p {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(10, 128, 87, 1);
+    margin-left: 1.25rem;
+}
+
+.first-p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgba(86, 197, 104, 1);
+}
+
+.util {
+    justify-content: center;
+}
+
+.margin {
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+}
+
+.box {
+    width: 35%;
+    border: 1px solid #E5E5E5;
+    padding: 2.25rem;
+}
+
+.box p {
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 1.25rem;
+}
+
+.util .box:first-child {
+    margin-right: 3rem;
+}
+
+.faq-p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgba(10, 128, 87, 1);
+    margin-top: 7rem;
+    margin-bottom: 3.8rem;
+    text-align: left;
+}
+
+.flex-j {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.flex-j p {
+    width: 45%;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgba(0, 119, 220, 1);
+    text-align: left;
+    letter-spacing: .1rem;
+}
+
+@media (max-width: 467px) {
+    .section {
+        padding: 3rem 3rem;
+    }
+
+    .question p {
+        font-size: 2.5rem;
+    }
+
+    .util {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .util .box:first-child {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .flex-j {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .flex-j p {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .box {
+        width: 60%;
+    }
+}
+
+@media (min-width: 468px) and (max-width: 761px) {
+    .section {
+        padding: 6rem 6rem;
+    }
+
+    .util {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .util .box:first-child {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .flex-j {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .flex-j p {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .box {
+        width: 45%;
+    }
+}
+
+@media (min-width: 762px) and (max-width: 1024px) {
+    .section {
+        padding: 8rem 8rem;
+    }
+
+    .util {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .util .box:first-child {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .flex-j {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .flex-j p {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    
+    .box {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .section {
+        padding: 3rem 20rem;
+    }
+}
+
