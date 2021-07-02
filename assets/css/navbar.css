@@ -53,6 +53,7 @@ nav{
     background: transparent;
     border-color: transparent;
     cursor: pointer;
+    outline: none;
   }
   
   .nav-toggle:hover {
@@ -80,7 +81,7 @@ nav{
     transition: all 0.3s linear;
   }
   .show-links {
-    height: 16rem;
+    height: 18rem;
   }
 
   .active {
@@ -118,6 +119,7 @@ nav{
         padding: 4px;
         border-bottom: none;
         transition:  all 0.3s ease-in;
+        cursor: pointer;
     }
     .nav-item:hover {
         border-bottom: 4px solid #0A8057;
