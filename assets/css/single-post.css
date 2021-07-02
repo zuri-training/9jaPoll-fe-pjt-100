@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color:  #333333;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 4px;
+    width: 20%;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #0A8057;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: #333333;
+  }
+
+  .logo {
+    height: 40px;
+  }
+  .links a {
+    color: #333333;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition:  all 0.3s linear;
+}
+  .links a:hover {
+    color: #0A8057;
+    padding-left: 1.5rem;
+  }
+
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 16rem;
+  }
+
+  .active {
+    color: #0A8057;
+  }
+
+  .section {
+    margin: 20px 0;
+    padding: 16px 7%;
+    margin-top: 50px;
+}
+
+.article {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 2%;
+    margin-bottom: 5%;
+}
+
+ .article-img img{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+} 
+
+.article-container{
+    display: grid;
+    grid-template-rows: 5% 5% 80%;
+    grid-row-gap: 8px;
+}
+
+.article-title h3, .similar-posts h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.similar-posts h3{
+    text-transform: capitalize;
+}
+
+.article-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.detail {
+    margin: 0 8px
+}
+
+.article-content p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align:justify;
+    margin-bottom: 16px;
+}
+
+.post-card {
+    height: fit-content;
+    margin: 16px auto;
+    padding-bottom: 8px;
+    background: #F2F2F2;
+    
+}
+
+.post-card h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 8px;
+
+}
+
+.post-card p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 8px;
+
+}
+
+.post-card img{
+    width: 100%
+}
+
+
+
+  @media screen and (min-width: 800px) {
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+    }
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links {
+        height: 25px;
+        display: flex;
+    }
+    .nav-item {
+        margin: 0 10px;
+        padding: 4px;
+        border-bottom: none;
+        transition:  all 0.3s ease-in;
+    }
+    
+    .nav-item:hover {
+        border-bottom: 4px solid #0A8057;
+    }
+
+    .nav-item:hover a {
+        color: #0A8057;
+    }
+
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+    }
+
+    .active {
+        color: #0A8057;
+        border-bottom: 4px solid #0A8057;
+
+    }
+
+    .section {
+        margin: 20px 0;
+        padding: 16px 7%;
+        margin-top: 50px;
+    }
+/* 
+    .article {
+        display: grid;
+        grid-template-columns: 35% 55%;
+        grid-column-gap: 10%
+    }
+
+    .article-img img{
+        width: inherit;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    } */
+
+    .article {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        grid-column-gap: 5%
+    }
+
+    .article-img img{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-container{
+        display: grid;
+        grid-template-rows: 5% 5% 80%;
+        grid-row-gap: 5%;
+    }
+
+    .article-title h3,.similar-posts h3  {
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .similar-posts h3{
+        text-transform: capitalize;
+    }
+    
+    .article-details {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: none;
+        
+    }
+
+    .detail {
+        margin: 0 8px
+    }
+
+    .article-content p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align:justify;
+        margin-bottom: 16px;
+
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .post-card {
+        height: fit-content;
+        margin: 16px 0;
+        padding-bottom: 8px;
+        background: #e2e2e2;
+        width: 80%;
+        transition: all .3s ease;
+    }
+
+    .post-card:hover {
+        box-shadow: 2px 4px 14px #dcdcdc;
+    }
+    
+    .post-card h4 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 8px;
+    
+    }
+    
+    .post-card p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 8px;
+    
+    }
+    
+    .post-card img{
+        width: 100%
+    }
+  }
+
+
