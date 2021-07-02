@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem 11rem;
+}
+
+.input {
+    position: relative;
+}
+
+.input input {
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    width: 25%;
+    padding: 1.25rem 1.25rem 1.25rem 5rem;
+}
+
+.input input::placeholder {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(149, 149, 149, 1);
+}
+
+.input img {
+    position: absolute;
+    top: 1.25rem;
+    left: 2rem;
+}
+
+.search {
+    margin-top: 7.25rem;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 1);
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 2.5rem;
+}
+
+.found {
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    font-size: 2rem;
+    padding-bottom: 1.85rem;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 2.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.aspirant {
+    margin-right: 10rem;
+}
+
+.p-box {
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 0px 0px 5px 5px;
+    padding: 1.25rem;
+    margin-top: -.5rem;
+}
+
+.p-box span {
+    display: block;
+}
+
+.name {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+
+.description,
+.party {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: .6rem;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(0, 119, 220, 1);
+    margin-top: .85rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 467px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .input input {
+        width: 60%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .aspirant {
+        margin-right: 0;
+        margin-bottom: 5.5rem;
+    }
+
+    .size img,
+    .p-box {
+        width: 60%;
+    }
+}
+
+@media (min-width: 468px) and (max-width: 761px) {
+    body {
+        padding: 3rem 4rem;
+    }
+
+    .input input {
+        width: 40%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .aspirant {
+        margin-right: 0;
+        margin-bottom: 5.5rem;
+    }
+
+    .p-box {
+        width: 230px;
+    }
+}
+
+
+
+
