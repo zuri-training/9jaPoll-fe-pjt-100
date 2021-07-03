@@ -1,188 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" ,chrome="1" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9jaPolls</title>
-    <link rel="stylesheet" href="./assets/css/edit-post.css" />
+    <link rel="stylesheet" href="assets/css/edit-post.css">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  </head>
-  <body>
-    <!--Nav Bar Section-->
-    <div class="nav-bar">
-      <div class="logo">
-        <img src="./assets/images/logo.png" />
-        <img src="./assets/images/9japolls.png" />
-      </div>
-      <button class="hamburger" id="hamburger">
-        <i style="color: black" class="fa fa-bars"></i>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="post-page.html">Articles</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
+</head>
+<body>
+  <nav>
+    <div class="nav-center">
+        <div class="nav-header">
+            <div class="logo-container">
+                <img src="./assets/images/logo.png" />
+                9jaPolls               
+            </div>
+            <button class="nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <ul class="links">
+            <!-- Attach 'active' class on the page you are working on as shown below,
+            e.g If you are imporing this navbar in Profile page, Attach 'active' to
+            the nav-item class housing Profile.html link -->
+            <li class="nav-item active">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="post-page.html">Posts</a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="section">
+        <div class="heading">
+            <h3>edit post</h3>
+        </div>
+
+        <div class="post">
+            <form action="">
+                <div class="title">
+                    <label for="">title</label>
+                    <input type="text" placeholder="Post Title">
+                </div>
+                <div class="article">
+                    <label for="">article body</label>
+                    <textarea placeholder="Enter your post..."></textarea>
+                </div>
+                <div class="image-container">
+                    <img src='./assets/images/post-img.png' alt="post-img"/>
+                    <button  class="btn-upload">
+                        <img src='./assets/icons/camera.svg' alt="camera" id="camera-icon">
+                        <p>Select New Photo</p>
+                    </button>
+                </div>
+                <button type="submit" class="btn-submit">
+                    save changes
+                </button>
+            </form>
+        </div>
     </div>
 
-    <section class="editor-display">
-      <div class="editoral-text-content">
-        <section class="editor-container">
-          <input type="text" placeholder="Enter Title Here:" />
-          <div class="editor">
-            <div class="edit-buttons">
-              <img
-                src="./assets/icons/bold.svg"
-                alt=""
-                data-cmd="bold"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/italics.svg"
-                alt=""
-                data-cmd="italic"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/underLine.svg"
-                alt=""
-                data-cmd="underLine"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/justify-left.svg"
-                alt=""
-                data-cmd="justifyLeft"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/justify-center.svg"
-                alt=""
-                data-cmd="justifyCenter"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/justify-right.svg"
-                alt=""
-                data-cmd="justifyRight"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/justify-full.svg"
-                alt=""
-                data-cmd="justifyFull"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/orderList.svg"
-                alt=""
-                data-cmd="insertOrderedList"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/unOrderedList.svg"
-                alt=""
-                data-cmd="insertUnorderedList"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/attach.svg"
-                alt=""
-                data-cmd="attach"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/insert-image.svg"
-                alt=""
-                data-cmd="insertImage"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/capitalize.svg"
-                alt=""
-                data-cmd="fontSize"
-                class="buttons"
-              />
-              <img
-                src="./assets/icons/create-link.svg"
-                alt=""
-                data-cmd="createLink"
-                class="buttons"
-              />
-              <div class="special-photo-container">
-                <div class="special-photo">
-                  Add Media
-                  <img
-                    src="./assets/icons/photo-neon.svg"
-                    alt=""
-                    data-cmd="createLink"
-                    class="buttons"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <iframe id="edit-post" name="textField"></iframe>
-          </div>
-          <p class="word-count">Word count: <span id="number-count">0</span></p>
-
-          <div class="delete-edit">
-            <div class="delete">
-              <img
-                src="./assets/icons/waste-bin.svg"
-                alt=""
-                data-cmd="delete"
-                class="buttons"
-              />
-            </div>
-
-            <div class="edit">
-              <p>Edit Post</p>
-              <img src="./assets/icons/down-arrow.svg" alt="" />
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <div class="footertop">
-        <div class="desc">
-          <img src="/EDIT POST FOLDER/logo white.png white.png" />9japolls
-        </div>
-        <a href="#AboutUsPage">About Us</a>
-        <a href="#ourteams">Our Teams</a>
-      </div>
-
-      <div class="footertop">
-        <div class="desc">Help & Support</div>
-        <a href="#FAQpage">FAQs</a>
-        <a href="#ContactUsPage">Contact Us</a>
-      </div>
-
-      <div class="footertop">
-        <div class="desc">Legal</div>
-        <a href="#Terms&ConditionsPage">Terms and Conditions</a>
-        <a href="#PrivacyPolicyPage">Privacy policy</a>
-      </div>
-
-      <div class="footertop">
-        <div class="desc">Follow Us</div>
-        <a href="#TwitterSite" class="fa fa-twitter"></a>
-        <a href="#LinkedInSite" class="fa fa-linkedin"></a>
-        <a href="#FacebookSite" class="fa fa-facebook"></a>
-      </div>
-    </footer>
-
-    <script src="/EDIT POST FOLDER/Edit-post.js"></script>
-    <script src="/EDIT POST FOLDER/script.js"></script>
-  </body>
+<script src='./assets/js/edit-post.js'></script>
+</body>
 </html>
