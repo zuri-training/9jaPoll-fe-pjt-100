@@ -7,11 +7,20 @@
 
 a {
     text-decoration: none;
+    color: #333333;
 }
 
 a:hover,
 button:hover {
     filter: brightness(0.8);
+}
+
+.scale {
+    transition: transform 0.4s ease-in-out;
+}
+
+.scale:hover {
+    transform: scale(0.94);
 }
 
 button,
@@ -58,11 +67,11 @@ nav a {
 }
 
 .left-content h3 {
-    color: #0A8057;
-    font-weight: 400;
+    color: #333333;
+    font-weight: 600;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .left-content p {
@@ -73,11 +82,10 @@ nav a {
 
 .left-content button {
     background: #1FEDA3;
-    ;
     width: 70%;
     padding: 0.5rem 0;
     border-radius: 0.4rem;
-    margin: 20px 0;
+    margin: 35px 0 20px 0;
     cursor: pointer;
 }
 
@@ -171,10 +179,11 @@ footer .link a {
 
 .about h3 {
     color: #0A8057;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     text-align: center;
     font-weight: 500;
     font-family: 'Merriweather' Sans;
+    word-spacing: 3px;
 }
 
 .users,
@@ -183,22 +192,23 @@ footer .link a {
 }
 
 .users {
-    margin-right: 2%;
+    margin-right: 6%;
     display: flex;
-    width: 30%;
+    width: 20%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .users img {
     width: 49%;
-    height: 80px;
-    margin-bottom: 15px;
+    height: 110px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
 .users img:nth-child(even) {
-    transform: translateY(25px);
+    position: relative;
+    top: 20px;
 }
 
 .info h4 {
@@ -210,7 +220,8 @@ footer .link a {
 .info p {
     font-size: 0.8rem;
     margin-bottom: 20px;
-    line-height: 160%;
+    line-height: 165%;
+    color: #333333;
 }
 
 p.subtitle {
@@ -294,7 +305,7 @@ p.subtitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 55%;
+    width: 40%;
     margin: auto;
 }
 
@@ -302,8 +313,8 @@ p.subtitle {
     background: #FFFFFF;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +356,7 @@ p.subtitle {
 div.comment {
     width: 40%;
     background-color: #D3FFEF;
-    background-image: url(./images/comment-bg.png);
+    background-image: url(../images/comment-bg.png);
     background-size: 100% 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -378,20 +389,23 @@ div.comment {
     font-size: 0.7rem;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 15px;
+}
+
+.comment p.comment {
+    margin-bottom: 20px;
 }
 
 .form {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 40%;
     margin: auto;
 }
 
 .form input {
     width: 75%;
     height: 40px;
-    border: 1px solid #333333;
+    border: 1px solid #E0E0E0;
     border-radius: 5px;
     padding: 0 10px;
 }
@@ -401,8 +415,23 @@ div.comment {
     margin-left: 10px;
     border-radius: 5px;
     padding: 5px 0;
-    background: #0A8057;
+    background: #1FEDA3;
     cursor: pointer;
+}
+
+@media screen and (max-width:950px) {
+    .why-us {
+        width: 90%;
+    }
+    .why-card {
+        width: 32%;
+    }
+    .steps {
+        width: 60%;
+    }
+    .comments {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width:720px) {
@@ -432,15 +461,21 @@ div.comment {
         margin: auto;
         text-align: center;
     }
-    .users,
     .info {
         width: 100%;
+    }
+    .users {
+        width: 70%;
+        margin: 15px 0 40px 0;
     }
     .info h4 {
         margin-top: 15px;
     }
     .about-buttons {
         justify-content: center;
+    }
+    .about h3 {
+        font-size: 1.5rem;
     }
     .why-card {
         width: 70%;
@@ -450,8 +485,8 @@ div.comment {
         width: 90%;
     }
     .step {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
     }
     .steps img {
         width: 30px;
@@ -467,6 +502,45 @@ div.comment {
         font-size: 0.8rem;
     }
     .form {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .users {
         width: 80%;
+        margin: 15px 0 40px 0;
+    }
+    .comments {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    div.comment {
+        width: 70%;
+        margin: 0 auto 20px auto;
+    }
+    .about {
+        padding: 0 15px;
+    }
+    .about h3 {
+        font-size: 1.25rem;
+    }
+    .form {
+        width: 100%;
+    }
+    .steps {
+        width: 100%;
+    }
+    .step {
+        width: 55px;
+        height: 55px;
+    }
+    .steps img {
+        width: 20px;
+        height: 20px;
+    }
+    .why-card {
+        width: 790%;
+        margin: 20px auto;
     }
 }
