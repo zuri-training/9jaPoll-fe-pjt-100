@@ -5,34 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <link rel="stylesheet" href="./navbar-footer/nav-footer.css">
-    <title>Home</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="stylesheet" href="./assets/css/home.css">
+<title>9jaPolls</title>
 </head>
 
-<body>
-     <!--Nav Bar Section-->
-    <div class="nav-bar">
-      <div class="logo">
-        <img src="./assets/images/logo.png" />
-        <img src="./assets/images/9japolls.png" />
-      </div>
-      <button class="hamburger" id="hamburger">
-        <i class="fa fa-bars"></i>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-        <li><a href="contact.html">Contanct Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </div>
-    <!-- Nav ends -->
-   
+
+<body> 
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <div class="logo-container">
+                    <img src="./assets/images/logo.png" />
+                    9jaPolls               
+                </div>
+                <button class="nav-toggle">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li class="nav-item  active">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="post-page.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="privacy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <section class="content">
         <section class="banner">
             <div class="left-banner">
-                <h2>Welcome to 9ja polls</h2>
+                <h1>Welcome to 9ja polls</h1>
                 <p>This is a website you can trust for verified information regarding Nigeria’s election.</p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia arcu sed velit congue, vel ullamcorper lacus pharetra. Ut ligula mi, dignissim a volutpat id, convallis ac purus.
@@ -46,31 +72,35 @@
                 </p>
             </div>
             <div class="right-banner">
-                <div class="banner-carousel">
-                    <div class="image-wrapper">
-                        <img src="assets/icons/vote.svg" alt="vote">
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/icons/enquiry.svg" alt="">
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/icons/vote-count.svg" alt="">
-                    </div>
-                </div>
-                <p>Tension rises as we cont down to the presidential election</p>
+                <div class="right-banner-container">
+                    <div class="banner-carousel">
+                        <div class="image-wrapper">
+                            <img src="assets/icons/vote-count.svg" alt="vote">
+                            <p>Tension rises as we count down to the presidential election</p>
 
-                <div class="carets">
-                    <img  src="assets/icons/caret-left.svg" alt="" class="in-active left-caret">
-                    <img src="assets/icons/caret-left.svg" alt="" class="in-active right-caret">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/icons/vote.svg" alt="vote">
+                            <p>All voters are ready to cast there votes as we prepare for an election to remember</p>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/icons/enquiry.svg" alt="vote">
+                            <p>To make enquiries about the available voting centers, let us know</p>
+                        </div>
+                    </div>
+                    <div class="carets">
+                        <img  src="assets/icons/caret-right.svg" alt="" class="left-caret">
+                        <img src="assets/icons/caret-right.svg" alt="" class="right-caret">
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="news">
             <div class="left-news">
-                <h3>Recent Posts</h3>
+                <h4>Recent Posts</h4>
                 <div class="news-card">
-                    <img  src="assets/icons/news-avatar.svg" alt="" class="news-avatar">
+                    <img src="assets/icons/news-avatar.svg" alt="" class="news-avatar">
                     <div class="news-content">
                         <a href="#" class="headline">How to join political party</a>
                         <div class="news-meta">
@@ -81,7 +111,7 @@
                 </div>
 
                 <div class="news-card">
-                    <img  src="assets/icons/news-avatar.svg" alt="" class="news-avatar">
+                    <img src="assets/icons/news-avatar.svg" alt="" class="news-avatar">
                     <div class="news-content">
                         <a href="#" class="headline">Politics and People</a>
                         <div class="news-meta">
@@ -149,17 +179,17 @@
             <div class="right-news">
                 <div class="news-heading">
                     <h3>Cross Section of Candidates</h3>
-                    <a href="#">View all</a>
+                    <a id="view" href="Aspirants_page.html">View all</a>
                 </div>
 
                 <div class="news-card-container">
                     <div class="news-card-content">
-                        <img  src="assets/icons/aspirant-1.svg" alt="">
+                        <img src="assets/icons/aspirant-1.svg" alt="">
                         <div class="aspirant-info">
                             <p class="aspirant-name">Dele Akindele Makinde</p>
                             <p>Governoship Aspirant Ekiti state</p>
                             <p>Peoples Democratic Party</p>
-                            <a href="#">View full profile</a>
+                            <a href="Aspirants_page.html">View full profile</a>
                         </div>
                     </div>
 
@@ -169,7 +199,7 @@
                             <p class="aspirant-name">Jide Oloko Christian</p>
                             <p>Governoship Aspirant Ekiti state</p>
                             <p>Peoples Democratic Party</p>
-                            <a href="#">View full profile</a>
+                            <a href="Aspirants_page.html">View full profile</a>
                         </div>
                     </div>
 
@@ -179,7 +209,7 @@
                             <p class="aspirant-name">Adams Asuqou Ben</p>
                             <p>Governoship Aspirant Ekiti state</p>
                             <p>Peoples Democratic Party</p>
-                            <a href="#">View full profile</a>
+                            <a href="Aspirants_page.html">View full profile</a>
                         </div>
                     </div>
 
@@ -189,7 +219,7 @@
                             <p class="aspirant-name">Gbenga Asukpo Issa</p>
                             <p>Governoship Aspirant Ekiti state</p>
                             <p>Peoples Democratic Party</p>
-                            <a href="#">View full profile</a>
+                            <a href="Aspirants_page.html">View full profile</a>
                         </div>
                     </div>
 
@@ -199,7 +229,7 @@
                             <p class="aspirant-name">Eleme Olukoga Iyanu</p>
                             <p>Governoship Aspirant Ekiti state</p>
                             <p>Peoples Democratic Party</p>
-                            <a href="#">View full profile</a>
+                            <a href="Aspirants_page.html">View full profile</a>
                         </div>
                     </div>
 
@@ -209,7 +239,7 @@
                             <p class="aspirant-name">Egbeme Daniel Izere</p>
                             <p>Governoship Aspirant Ekiti state</p>
                             <p>Peoples Democratic Party</p>
-                            <a href="#">View full profile</a>
+                            <a href="Aspirants_page.html">View full profile</a>
                         </div>
                     </div>
                 </div>
@@ -225,39 +255,7 @@
             </div>
         </section>
     </section>
-    <footer>
-        <div class="link">
-            <a href="#">
-                <div class="brand">
-                    <img src="assets/icons/logov2.svg" alt="">
-                    <p>9japolls</p>
-                </div>
-            </a>
-            <a href="#" id="mgt">About us</a>
-            <a href="#">Our Team</a>
-        </div>
-
-        <div class="link">
-            <h4>Help & Support</h4>
-            <a href="#">FAQ's</a>
-            <a href="#">Contact US</a>
-        </div>
-
-        <div class="link">
-            <h4>Link</h4>
-            <a href="#">Terms and Condition</a>
-            <a href="#">Privacy Policy</a>
-        </div>
-        <div class="link">
-            <h4>Follow Us</h4>
-            <div class="socials">
-                <a href="#"> <img src="./assets/icons/twitter.svg" alt=""></a>
-                <a href="#"><img src="./assets/icons/linkedin.svg" alt=""></a>
-                <a href="#"><img src="./assets/icons/fb.svg" alt=""></a>
-            </div>
-        </div>
-    </footer>
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/home.js"></script>
 </body>
 
 </html>

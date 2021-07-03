@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color:  #333333;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 4px;
+  width: 20%;
+}
+
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  z-index: 99;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #0A8057;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+  
+.nav-toggle:hover {
+  color: #333333;
+}
+
+.logo {
+  height: 40px;
+}
+
+.links a {
+  color: #333333;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition:  all 0.3s linear;
+  font-size: 12px;
+}
+    
+.links a:hover {
+  color: #0A8057;
+  padding-left: 1.5rem;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.show-links {
+  height: 18rem;
+}
+
+.active {
+  color: #0A8057;
+}
+
+.active a{
+  color: #0A8057;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+  }
+
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    height: 25px;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+    padding: 4px;
+    border-bottom: none;
+    transition:  all 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .nav-item:hover {
+    border-bottom: 4px solid #0A8057;
+  }
+            
+  .nav-item:hover a {
+    color: #0A8057;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+
+  .active {
+    color: #0A8057;
+    border-bottom: 4px solid #0A8057;
+  }
+}
