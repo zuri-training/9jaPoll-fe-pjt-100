@@ -344,16 +344,21 @@ a {
     width: 420px;
   }
 
+  #email {
+    width: 420px;
+  }
+
   input {
     padding-left: 8px;
   }
 
-  .password-div {
+  .password-main {
     width: 420px;
   }
 
   .parent-div {
     display: inline-block;
+    margin-left: 25px;
   }
 
   #password {
@@ -376,6 +381,10 @@ a {
 
   .button {
     width: 430px;
+  }
+
+  .right {
+    padding-left: 100px;
   }
 
   .signup-img {
@@ -402,27 +411,35 @@ a {
   }
 
   #firstname {
-    width: 380px;
+    width: 350px;
   }
 
   #lastname {
-    width: 380px;
+    width: 350px;
+  }
+
+  #email {
+    width: 350px;
   }
 
   input {
     padding-left: 6px;
   }
 
-  .password-div {
-    width: 380px;
+  .password-main {
+    width: 350px;
+  }
+
+  .parent-div {
+    margin-left: 20px;
   }
 
   #password {
-    width: 380px;
+    width: 350px;
   }
 
   #confirmpassword {
-    width: 380px;
+    width: 350px;
   }
 
   .passwordstrength {
@@ -437,7 +454,11 @@ a {
   }
 
   .button {
-    width: 390px;
+    width: 360px;
+  }
+
+  .right {
+    padding-left: 60px;
   }
 
   .signup-img {
@@ -473,8 +494,8 @@ a {
     padding-left: 4px;
   }
 
-  .password-div {
-    width: 380px;
+  .password-main {
+    width: 350px;
   }
 
   #green {

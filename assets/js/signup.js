@@ -83,7 +83,7 @@ document.querySelector("#submit").addEventListener("click", async (event) => {
 
   // try {
   //   const response = await fetch(
-  //     "https://jsonplaceholder.typicode.com/todos/1",
+  //     " https://naijapollbackend.herokuapp.com/",
   //     {
   //       method: "GET",
   //     }
@@ -318,3 +318,10 @@ function isEmail(email) {
     email
   );
 }
+
+async function getUser (req, res) {
+  const api =  'https://naijapollbackend.herokuapp.com/'
+  await fetch (api).then((res) => console.log(res))
+}
+getUser()
+
