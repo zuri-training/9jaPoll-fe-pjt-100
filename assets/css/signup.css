@@ -68,6 +68,7 @@ input {
 .parent-div {
   display: flex;
   justify-content: space-around;
+  margin-left: 32px;
 }
 
 .child-div {
@@ -302,6 +303,13 @@ a {
   text-decoration: none;
   color: #0077dc;
   padding: 0 3px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 130px;
 }
 
 .signup-img {
