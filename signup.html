@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9ja Poll</title>
-    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <link rel="stylesheet" href="assets/css/signup.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="text/javascript" src="signup.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <img src="./assets/images/logo.png" alt="" class="logo-img" />
+        <img src="assets/images/logo.png" alt="" class="logo-img" />
         <p>9japolls</p>
       </nav>
     </header>
@@ -30,7 +29,6 @@
                 type="text"
                 placeholder="Enter your first name"
                 id="firstname"
-                required="required"
               />
               <small class="small">Error Message</small>
             </div>
@@ -40,7 +38,6 @@
                 type="text"
                 placeholder="Enter your last name"
                 id="lastname"
-                required="required"
               />
               <small class="small">Error Message</small>
             </div>
@@ -52,16 +49,16 @@
               name=""
               placeholder="example@gmail.com"
               id="email"
-              required="required"
             />
+            <br />
             <small class="small">Error Message</small>
           </div>
+
           <div class="parent-div">
             <div class="child-div formcontrol">
               <p class="small-p">Password</p>
-              <div class="password-main">
+              <span class="password-main">
                 <input
-                  oninput="strengthChecker()"
                   type="password"
                   name=""
                   placeholder="xxxxxxxxxxx"
@@ -69,22 +66,23 @@
                   required="required"
                 />
                 <img
-                  src="./assets/images/eye.png"
+                  src="assets/images/eye.png"
                   alt=""
                   class="password-eye"
                   id="show"
                   onclick="myFunction()"
                 />
                 <img
-                  src="./assets/images/eyeslash.png"
+                  src="assets/images/eyeslash.png"
                   alt=""
                   class="password-eye"
                   id="hide"
                   onclick="myFunction()"
                 />
-              </div>
-              <small class="small">Error Message</small>
+                <small class="small passwordError">Error Message</small>
+              </span>
             </div>
+
             <div class="child-div formcontrol">
               <p class="small-p">Confirm Password</p>
               <div class="password-main">
@@ -93,54 +91,59 @@
                   name=""
                   placeholder="xxxxxxxxxxx"
                   id="confirmpassword"
-                  required="required"
                 />
                 <img
-                  src="./assets/images/eye.png"
+                  src="assets/images/eye.png"
                   alt=""
                   class="password-eye"
                   id="open"
                   onclick="validate()"
                 />
                 <img
-                  src="./assets/images/eyeslash.png"
+                  src="assets/images/eyeslash.png"
                   alt=""
                   class="password-eye"
                   id="close"
                   onclick="validate()"
                 />
+                <small class="small passwordError">Error Message</small>
               </div>
-              <small class="small">Error Message</small>
             </div>
           </div>
+
           <div id="parentstrength">
             <p class="small-p">Password Strength</p>
             <div id="divstrength">
-              <div class="weak fair medium passwordstrength"></div>
-              <div class="fair medium passwordstrength"></div>
-              <div class="medium passwordstrength"></div>
+              <div class="weak"></div>
+              <div class="fair"></div>
+              <div class="medium"></div>
               <div class="passwordstrength"></div>
             </div>
-            <p id="green">Strong</p>
+            <p id="green"></p>
           </div>
           <p class="small-p">
             By clicking Sign up, you agree to our <a href="#">Terms</a> and
             <a href="#">Privacy Policy</a>
           </p>
-          <input type="submit" value="Create Account" class="button" />
+          <input
+            type="submit"
+            id="submit"
+            value="Create Account"
+            class="button"
+          />
         </form>
         <p class="big-p">
           Already have an account? <a href="signin.html">Sign in</a>
         </p>
       </div>
-      <div class="left signup-div">
-        <img src="./assets/images/signup-img.png" alt="" class="signup-img" />
+      <div class="right signup-div">
+        <img src="assets/images/signup-img.png" alt="" class="signup-img" />
       </div>
     </div>
     <!-- Footer Section -->
     <footer>
       <div class="footertop">
-        <div class="desc"><img src="./assets/images/logo white.png" />9japolls</div>
+        <div class="desc"><img src="image/logo white.png" />9japolls</div>
         <a href="#AboutUsPage">About Us</a>
         <a href="#ourteams">Our Teams</a>
       </div>
@@ -164,5 +167,7 @@
         <a href="#FacebookSite" class="fa fa-facebook"></a>
       </div>
     </footer>
+
+    <script type="text/javascript" src="assets/js/signup.js"></script>
   </body>
 </html>
