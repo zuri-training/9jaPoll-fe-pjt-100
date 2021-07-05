@@ -1,3 +1,9 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
 nav {
     position: relative;
     display: flex;
@@ -6,6 +12,7 @@ nav {
     justify-content: space-between;
     padding: 15px 30px;
     margin-bottom: 40px;
+    background-color: #FFFFFF;
 }
 
 .brand {
@@ -15,13 +22,15 @@ nav {
 .brand img {
     width: 15px;
     height: 20px;
-    transform: translateY(5px);
 }
 
 .brand a {
     padding: 5px 0;
     font-size: 0.9rem;
     border-bottom: 2px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    transform: translateY(-3px);
 }
 
 .brand a:active,
@@ -73,11 +82,14 @@ nav {
 }
 
 div.mobile-nav {
-    width: 100%;
+    width: calc(100% - 50px);
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
     background-color: rgba(31, 237, 163, 1);
-    position: fixed;
+    position: absolute;
     inset: 0;
-    z-index: 10;
+    z-index: 99;
     padding: 20px;
     transform: translateX(-100%);
     display: flex;
@@ -86,8 +98,10 @@ div.mobile-nav {
     transition: transform 0.5s ease-in-out;
 }
 
-nav img.menu {
+nav img.menu,
+nav img.close {
     display: none;
+    cursor: pointer;
 }
 
 .mobile-nav img {
@@ -99,12 +113,17 @@ nav img.menu {
     .brand {
         width: 35%;
     }
+    nav {
+        padding: 10px 15px;
+    }
+    header nav img.hide-icon {
+        display: none;
+    }
     nav img.menu {
         display: block;
-        cursor: pointer;
     }
-    nav img.menu:hover {
-        color: #C4C4C4;
+    nav img.close {
+        display: block;
     }
     nav div.links {
         display: none;
@@ -147,10 +166,10 @@ nav img.menu {
     div.mobile-nav button {
         border: 0;
         outline: 0;
-        width: 60%;
-        margin: auto;
-        border-radius: 50px;
+        width: 50%;
+        margin: 15px auto 0 auto;
+        border-radius: 15px;
         background-color: #0A8057;
-        padding: 7px 0;
+        padding: 0 0;
     }
 }
