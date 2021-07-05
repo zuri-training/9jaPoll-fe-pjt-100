@@ -83,7 +83,7 @@ document.querySelector("#submit").addEventListener("click", async (event) => {
 
   // try {
   //   const response = await fetch(
-  //     "https://jsonplaceholder.typicode.com/todos/1",
+  //     " https://naijapollbackend.herokuapp.com/",
   //     {
   //       method: "GET",
   //     }
@@ -105,7 +105,7 @@ function onSuccess(input) {
 
 function onError(input, message) {
   let parent = input.parentElement;
-  console.log(parent)
+  console.log(parent);
   let messageEle = parent.querySelector(".small");
   messageEle.style.visibility = "visible";
   messageEle.innerText = message;
@@ -318,3 +318,42 @@ function isEmail(email) {
     email
   );
 }
+const baseService = {
+  baseURL: "",
+  setBaseURL: (url) => {
+    baseService.baseURL = url;
+  },
+  getAllMethod: async () => {
+    await fetch(baseService.baseURL)
+      .then((res) => res.text())
+      .then((res) => console.log(res));
+  },
+
+  signUpMethod: async (payload) => {
+    await fetch(baseService.baseURL, payload)
+      .then((res) => res.text())
+      .then((res) => console.log(res));
+  }
+
+};
+
+const signUpPayload = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  password: ""
+}
+
+async function getUser(req, res) {
+  const api = "https://naijapollbackend.herokuapp.com/";
+  // await fetch(api)
+  //   .then((res) => res.text())
+  //   .then((res) => console.log(res));
+  baseService.setBaseURL(api);
+  console.log(baseService.baseURL);
+  baseService.getAllMethod();
+}
+
+getUser();
+
+create
