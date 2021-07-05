@@ -430,9 +430,9 @@ a {
     width: 350px;
   }
 
-  .parent-div {
+  /* .parent-div {
     margin-left: 20px;
-  }
+  } */
 
   #password {
     width: 350px;
@@ -502,6 +502,15 @@ a {
     font-size: 8px;
     line-height: 10px;
     padding-left: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }
 

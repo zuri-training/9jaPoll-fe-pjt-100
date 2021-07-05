@@ -258,6 +258,20 @@ input:active {
     .button {
       width: 390px;
     }
+
+    @media (max-width: 484px) {
+      #email {
+        width: 330px;
+      }
+  
+      .password-main {
+        width: 330px;
+      }
+  
+      .button {
+        width: 340px;
+      }
+    }
   }
 
 /*Footer Styles*/
