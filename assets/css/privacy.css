@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap");
+
+:root {
+  --primary-color: #0a8057;
+  --secondary-color: #333333;
+  --color1: #959595;
+  --color2: #00a86e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 4rem auto;
+  margin-top: 10rem;
+}
+
+.container h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.privacy-intro {
+  margin-top: 3rem;
+  border-bottom: 1px solid var(--color1);
+  padding-bottom: 2rem;
+}
+
+.privacy-intro h2 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.privacy-intro p {
+  color: var(--color2);
+}
+
+.privacy-content {
+  margin-top: 2.2rem;
+}
+
+.privacy-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 5% auto;
+  gap: 1rem;
+}
+
+.item h3 {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.2rem;
+}
+
+.item p {
+  line-height: 2em;
+  font-size: 14px;
+  color: var(--color1);
+}
+
+.icon i {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.further-info {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.further-info h3 {
+  margin-bottom: 1rem;
+}
+
+/* media queries */
+@media screen and (max-width: 700px) {
+  .privacy-items {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+  }
+
+  .further-info {
+    width: 80%;
+  }
+}
