@@ -29,6 +29,7 @@ nav {
   width: 90%;
   margin: auto;
   padding: 20px;
+  display: flex;
 }
 
 .left {
@@ -66,11 +67,14 @@ input {
 
 .parent-div {
   display: flex;
+  justify-content: space-around;
+  margin-left: 32px;
 }
 
 .child-div {
   flex-wrap: wrap;
   margin-right: 15px;
+  position: relative;
 }
 
 input:active {
@@ -91,6 +95,7 @@ input:active {
   border: none;
   width: 247px;
   height: 40px;
+  outline: none;
 }
 
 #firstname.success {
@@ -112,6 +117,7 @@ input:active {
   border: none;
   width: 247px;
   height: 40px;
+  outline: none;
 }
 
 #lastname.success {
@@ -133,6 +139,7 @@ input:active {
   border: none;
   width: 520px;
   height: 40px;
+  outline: none;
 }
 
 #email.success {
@@ -154,6 +161,7 @@ input:active {
   border: none;
   width: 247px;
   height: 40px;
+  outline: none;
 }
 
 #password.success {
@@ -170,6 +178,7 @@ input:active {
   border: none;
   width: 247px;
   height: 40px;
+  outline: none;
 }
 
 #confirmpassword.success {
@@ -214,38 +223,61 @@ input:active {
 }
 
 #close {
-    display: none;
-  }
+  display: none;
+}
 
 .small {
   visibility: hidden;
+  color: #e74c3c;
 }
 
-/*#parentstrength {
-  display: none;
-}*/
+.passwordError {
+  position: absolute;
+  bottom: -17px;
+}
+
+#parentstrength {
+  margin-bottom: 0;
+  margin-top: 2rem;
+  visibility: hidden;
+}
 
 #divstrength {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
 }
 
 .weak {
-  color: red;
+  background-color: #e74c3c;
+  width: 70px;
+  height: 4px;
+  display: none;
+  margin-right: 1rem;
 }
 
 .fair {
-  color: orange;
+  background-color: orange;
+  width: 70px;
+  height: 4px;
+  display: none;
+  margin-right: 1rem;
 }
 
 .medium {
-  color: yellow;
+  background-color: yellow;
+  width: 70px;
+  height: 4px;
+  display: none;
+  margin-right: 1rem;
 }
 
 .passwordstrength {
   background: #56c568;
   width: 70px;
   height: 4px;
+  display: none;
 }
 
 #green {
@@ -273,8 +305,15 @@ a {
   padding: 0 3px;
 }
 
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 130px;
+}
+
 .signup-img {
-  padding: 130px;
+  /* padding-top: 130px; */
   height: 300px;
 }
 
@@ -305,16 +344,21 @@ a {
     width: 420px;
   }
 
+  #email {
+    width: 420px;
+  }
+
   input {
     padding-left: 8px;
   }
 
-  .password-div {
+  .password-main {
     width: 420px;
   }
 
   .parent-div {
     display: inline-block;
+    margin-left: 25px;
   }
 
   #password {
@@ -337,6 +381,10 @@ a {
 
   .button {
     width: 430px;
+  }
+
+  .right {
+    padding-left: 100px;
   }
 
   .signup-img {
@@ -363,27 +411,35 @@ a {
   }
 
   #firstname {
-    width: 380px;
+    width: 350px;
   }
 
   #lastname {
-    width: 380px;
+    width: 350px;
+  }
+
+  #email {
+    width: 350px;
   }
 
   input {
     padding-left: 6px;
   }
 
-  .password-div {
-    width: 380px;
+  .password-main {
+    width: 350px;
+  }
+
+  .parent-div {
+    margin-left: 20px;
   }
 
   #password {
-    width: 380px;
+    width: 350px;
   }
 
   #confirmpassword {
-    width: 380px;
+    width: 350px;
   }
 
   .passwordstrength {
@@ -398,7 +454,11 @@ a {
   }
 
   .button {
-    width: 390px;
+    width: 360px;
+  }
+
+  .right {
+    padding-left: 60px;
   }
 
   .signup-img {
@@ -434,8 +494,8 @@ a {
     padding-left: 4px;
   }
 
-  .password-div {
-    width: 380px;
+  .password-main {
+    width: 350px;
   }
 
   #green {

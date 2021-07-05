@@ -1,0 +1,368 @@
+CSS RESET
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "MerriweatherSans regular";
+    src: url("./assets/fonts/MerriweatherSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "MerriweatherSans bold";
+    src: url("./assets/fonts/MerriweatherSans-Bold.ttf");
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: MerriweatherSans, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #3fa2f7;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.main_content_wrapper{
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 1rem; 
+}
+
+.house-of-senate-section,
+.governorship-section,
+.presidential-section
+{
+    margin-bottom: 50px;
+}
+
+.house-of-senate-wrapper,
+.governorship-wrapper
+{
+    margin-bottom: 150px;
+}
+
+.presidential-wrapper{
+    margin-bottom: 20px;
+}
+
+.house-of-senate-wrapper,
+.governorship-wrapper,
+.presidential-wrapper
+{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.card
+{
+    /* width: 230px; */
+    width: 80%;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 7px;
+    border: 1px solid #f2f2f2;
+}
+
+.card
+{
+    margin-bottom: 30px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-details{
+    padding: 0 15px;
+}
+
+.card-details h4{
+    margin-bottom: 5px;
+}
+
+.card-details p{
+    margin-bottom: 15px;
+}
+
+.card-details a
+{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.card h4{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 415px){
+    .house-of-senate-wrapper,
+    .governorship-wrapper,
+    .presidential-wrapper
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .main_content_wrapper{
+        padding: 0 3rem 0 6rem; 
+    }
+    
+
+}
+
+/* mobile viewport */
+
+@media screen and (min-width: 320px) and (max-width: 431px){
+    .card
+    {
+        width: 100%;
+    }
+}
+
+/* tab viewport */
+
+@media screen and (min-width: 432px) and (max-width: 768px){
+    .card
+    {
+        width: 90%;
+    }
+
+    .main_content_wrapper{
+        padding: 0 3rem 0 4rem; 
+    }
+}
+
+
+/* NAVBAR AND FOOTER STYLES */
+
+/* Nav bar style */
+div.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    width: 100%;
+    background: whitesmoke;
+    align-items: center;
+  }
+  
+  div.logo {
+      display: flex;
+      align-items: center;
+    font-size: 1.5rem;
+    color: rgb(39, 38, 38);
+  }
+  
+  .logo img:first-child {
+    padding-right: 3px;
+    margin-bottom: 5px;
+    width: 20px;
+  }
+  .logo img:last-child {
+    margin-bottom: 3px;
+    padding-left: 3px;
+  }
+  
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .hamburger:focus {
+    outline: none;
+  }
+  
+  ul.nav-links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1.1rem;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    padding: 0.5vw;
+  }
+  
+  ul li a:hover {
+    padding: 0.1rem;
+    border-bottom: 3px solid green;
+  }
+  
+  /*Nav bar responsiveness*/
+  @media screen and (max-width: 768px) {
+    ul.nav-links {
+      display: none;
+      width: 100%;
+    }
+  
+    ul.nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    div.nav-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      width: 100vw;
+    }
+  
+    div.logo {
+      font-size: 1.3rem;
+    }
+    ul.nav-links {
+      flex-direction: column;
+    }
+  
+    ul li {
+      margin: 0;
+      font-size: 1rem;
+    }
+  
+    ul li a {
+      display: block;
+    }
+  }
+  
+  /*Footer style*/
+  .footer-content{
+    background: #0a8057;
+    padding: 30px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: auto;
+    color: #ffffff;
+  }
+
+  .footertop:not(:last-child) a{
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer .brand {
+    align-items: center;
+  }
+  
+  footer .link a {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  a#mgt {
+    margin-top: 10px;
+  }
+  
+  footer .link {
+    width: 25%;
+  }
+  
+  footer .link h4 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  footer .link a {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 20px;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .desc{
+      display: flex;
+      align-items: center;
+  }
+
+  .desc img{
+    margin-right: 5px;
+}
+
+  .footer-socials img{
+    width: 35px;
+  }
+
+  .footer-socials img{
+    margin-right: 7px;
+  }
+
+  .desc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14pt;
+  }
+  
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-decoration: none;
+    border-radius: 40%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  @media screen and (max-width: 600px) {
+    footer {
+      height: auto;
+    }
+  
+    .footertop {
+      width: 50%;
+      float: left;
+      margin-bottom: 40px;
+    }
+  }
+  
