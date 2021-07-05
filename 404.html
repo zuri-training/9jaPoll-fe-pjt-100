@@ -6,18 +6,122 @@
     <title>404 page</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/404.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
-    <section class="section">
-      <div class="input"></div>
-      <p class="error">404</p>
-      <p class="text">Sorry! We couldn’t find that page</p>
-      <a href="#" class="cta">Back to Home</a>
-    </section>
+    <!-- navbar -->
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <div class="logo-container">
+            <img src="./assets/images/logo.png" />
+            9jaPolls
+          </div>
+          <button class="nav-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
+          <!-- Attach 'active' class on the page you are working on as shown below,
+              e.g If you are imporing this navbar in Profile page, Attach 'active' to
+              the nav-item class housing Profile.html link -->
+          <li class="nav-item active">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="post-page.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="privacy.html">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="top">
+        <img src="./assets/images/404-woman.png" alt="404 image" />
+      </div>
+      <div class="middle">
+        <h1>OOPS! Sorry we couldn’t find the page</h1>
+        <p>
+          There could be so many reasons why you landed on this page including:
+        </p>
+        <ul>
+          <li>The page no longer exist</li>
+          <li>Wrong url</li>
+          <li>Broken link</li>
+          <li>Moved content</li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <p>
+          You can return to the <a href="./index.html">home page</a> or
+          <a href="./contact.html">Contact us</a> if you can’t find what you are
+          looking for
+        </p>
+        <a href="./index.html" class="back">Back to Home</a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="link">
+        <a href="">
+          <div class="brand">
+            <img src="./assets/icons/logov2.svg" alt="" />
+            <p>9japolls</p>
+          </div>
+        </a>
+        <a href="#" id="mgt">About us</a>
+        <a href="#">Our Team</a>
+      </div>
+
+      <div class="link">
+        <h4>Help & Support</h4>
+        <a href="#">FAQ's</a>
+        <a href="#">Contact US</a>
+      </div>
+
+      <div class="link">
+        <h4>Link</h4>
+        <a href="">Terms and Condition</a>
+        <a href="">Privacy Policy</a>
+      </div>
+      <div class="link">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.twitter.com/hakinrinmadey">
+            <img src="./assets/icons/twitter.svg" alt=""
+          /></a>
+          <a href=""><img src="./assets/icons/linkedin.svg" alt="" /></a>
+          <a href=""><img src="./assets/icons/fb.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/navbar.js"></script>
   </body>
 </html>
