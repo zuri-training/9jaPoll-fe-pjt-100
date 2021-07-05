@@ -20,7 +20,7 @@ button:hover {
 }
 
 .scale:hover {
-    transform: scale(0.94);
+    transform: scale(0.93);
 }
 
 button,
@@ -55,7 +55,7 @@ nav a {
 
 .content {
     width: 90%;
-    margin: 0 auto 60px auto;
+    margin: 90px auto 60px auto;
     display: flex;
     flex-wrap: wrap;
 }
