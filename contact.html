@@ -4,90 +4,206 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9ja Poll</title>
-    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <img src="./assets/images/logo.png" alt="" class="logo-img" />
-        <p>9japolls</p>
+        <div class="nav-center">
+          <div class="nav-header">
+            <div class="logo-container">
+              <img src="./assets/images/logo.png" />
+              9jaPolls
+            </div>
+            <button class="nav-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <ul class="links">
+            <li class="nav-item">
+              <a href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="post-page.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item active">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html">Logout</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <div>
+    <div class="body-contact">
+      <h1>Contact Us</h1>
+      <h4>Any question or remark? Just write us a message!</h4>
       <div class="contact-parent container">
-        <div class="contact-child">
+        <div class="contact-child left">
           <div>
-            <div>
-              <h2>Contact Us</h2>
-              <p class="contact-p">
-                Leo pharetra ut vel aenean habitasse feugiat. Quam lorem<br />
-                eget urna magna ridiculus elementum ipsum at.
-              </p>
-            </div>
-            <div class="parent-info">
-              <div class="contact-info">
-                <img
-                  src="./assets/images/message-icon.png"
-                  alt=""
-                  class="contact-img"
-                />
-                <p class="contact-p">9japolls.com</p>
-              </div>
-              <div class="contact-info">
-                <img
-                  src="./assets/images/phone-icon.png"
-                  alt=""
-                  class="contact-img"
-                />
-                <p class="contact-p">+23489056743</p>
-              </div>
-              <div class="contact-info">
-                <img
-                  src="./assets/images/location-icon.png"
-                  alt=""
-                  class="contact-img"
-                />
-                <p class="contact-p">
-                  A street, Abeokuta, Ogun State, Nigeria.
+            <div class="green-contact">
+              <div>
+                <h2>Contact info</h2>
+                <p class="big-p">
+                  Fill up the form and our team would get<br />
+                  back to you within 24 hours.
                 </p>
+              </div>
+              <div class="parent-info">
+                <span class="contact-info">
+                  <img
+                    src="assets/images/message.png"
+                    alt=""
+                    class="contact-img"
+                  />
+                  <span class="big-p">9japolls.com</span>
+                </span>
+                <span class="contact-info">
+                  <img
+                    src="assets/images/phone.png"
+                    alt=""
+                    class="contact-img"
+                  />
+                  <span class="big-p">+2348123457890</span>
+                </span>
+                <span class="contact-info">
+                  <img
+                    src="assets/images/location.png"
+                    alt=""
+                    class="contact-img"
+                  />
+                  <span class="big-p"
+                    >A street, Abeokuta, Ogun State, Nigeria.</span
+                  >
+                </span>
               </div>
             </div>
           </div>
-          <div class="contactform-div">
-            <form method="POST">
-              <p class="contactbig-p">Name</p>
-              <input
-                type="email"
-                name=""
-                placeholder="write your name here"
-                id="contact-name"
-                required="required"
-              />
-              <p class="contactbig-p">Email</p>
-              <input
-                type="email"
-                name=""
-                placeholder="example@gmail.com"
-                id="contact-email"
-                required="required"
-              />
-              <p class="contactbig-p">Message</p>
+          <div class="contactform-div left">
+            <form id="form" method="POST">
+              <div class="parent-div">
+                <div class="child-div formcontrol">
+                  <p class="small-p">First name</p>
+                  <input
+                    type="text"
+                    placeholder="Enter your first name"
+                    id="firstname"
+                  />
+                  <small class="small">Error Message</small>
+                </div>
+                <div class="child-div formcontrol">
+                  <p class="small-p">Last name</p>
+                  <input
+                    type="text"
+                    placeholder="Enter your last name"
+                    id="lastname"
+                  />
+                  <small class="small">Error Message</small>
+                </div>
+              </div>
+              <div class="parent-div">
+                <div class="child-div formcontrol">
+                  <p class="small-p">Email</p>
+                  <input
+                    type="email"
+                    name=""
+                    placeholder="example@gmail.com"
+                    id="email"
+                  />
+                  <br />
+                  <small class="small">Error Message</small>
+                </div>
+                <div class="child-div formcontrol">
+                  <p class="small-p">Phone</p>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="08123457890"
+                    id="phone"
+                  />
+                  <br />
+                  <small class="small">Error Message</small>
+                </div>
+              </div>
+              <div class="child-div formcontrol">
+                <p class="small-p">
+                  What kind of information would you like to see?
+                </p>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="example@gmail.com"
+                  id="info"
+                />
+                <br />
+                <small class="small">Error Message</small>
+              </div>
+              <p class="small-p">Message</p>
               <textarea
                 rows="5"
                 cols="60"
                 name="text"
-                placeholder="Write a message here"
-                id="contact-message"
+                placeholder="Write a message"
+                id="message"
                 required="required"
               ></textarea>
-              <input type="submit" value="Send" class="button" />
+              <input type="submit" value="Send" class="button" id="submit" />
             </form>
           </div>
         </div>
       </div>
-      <div class="contact-footer">
-        <img src="" alt="" />
-      </div>
     </div>
+    <footer>
+      <div class="link">
+        <a href="">
+          <div class="brand">
+            <img src="./assets/icons/logov2.svg" alt="" />
+            <p>9japolls</p>
+          </div>
+        </a>
+        <a href="#" id="mgt">About us</a>
+        <a href="#">Our Team</a>
+      </div>
+
+      <div class="link">
+        <h4>Help & Support</h4>
+        <a href="faq.html">FAQ's</a>
+        <a href="contact.html">Contact US</a>
+      </div>
+
+      <div class="link">
+        <h4>Link</h4>
+        <a href="">Terms and Condition</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="link">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.twitter.com/hakinrinmadey">
+            <img src="./assets/icons/twitter.svg" alt=""
+          /></a>
+          <a href=""><img src="./assets/icons/linkedin.svg" alt="" /></a>
+          <a href=""><img src="./assets/icons/fb.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
   </body>
 </html>
