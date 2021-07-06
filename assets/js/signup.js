@@ -67,6 +67,73 @@ function checkInputs() {
   }
 }
 
+const baseService = {
+  baseURL: "",
+  setBaseURL: (url) => {
+    baseService.baseURL = url;
+  },
+  getAllMethod: async () => {
+    await fetch(baseService.baseURL)
+      .then((res) => res.text())
+      .then((res) => console.log(res));
+  },
+
+  signUpMethod: async (payload) => {
+    // await fetch(baseService.baseURL, payload)
+    //   .then((res) => res.json())
+    //   .then((res) => console.log(res));
+
+    await fetch(baseService.baseURL, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify(payload), // body data type must match "Content-Type" header
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res))
+      .catch((error) => console.log("This is an exception" + error));
+  },
+
+  //   loginMethod: async (payload) => {
+  //   // await fetch(baseService.baseURL, payload)
+  //   //   .then((res) => res.json())
+  //   //   .then((res) => console.log(res));
+
+  //     await fetch(baseService.baseURL, {
+  //     method: 'POST', // *GET, POST, PUT, DELETE, etc.
+  //     headers: {
+  //     'Content-Type': 'application/json'
+  //     // 'Content-Type': 'application/x-www-form-urlencoded',
+  //   },
+  //   body: JSON.stringify(payload) // body data type must match "Content-Type" header
+  // })
+  //     .then((res) => res.json())
+  //     .then((res) => console.log(res)).catch((error) => console.log("This is an exception" + error))
+  // }
+};
+
+const signUpPayload = {
+  firstname: "",
+  lastname: "",
+  email: "",
+  password: "",
+  passwordConfirm: "",
+};
+
+async function getUser(req, res) {
+  const api = "https://propernaijapoll.herokuapp.com//api/v1/auth/signup";
+  // await fetch(api)
+  //   .then((res) => res.text())
+  //   .then((res) => console.log(res));
+  baseService.setBaseURL(api);
+  console.log(baseService.baseURL);
+  baseService.getAllMethod();
+}
+
+getUser();
+
 document.querySelector("#submit").addEventListener("click", async (event) => {
   event.preventDefault();
 
@@ -80,6 +147,17 @@ document.querySelector("#submit").addEventListener("click", async (event) => {
   };
 
   console.log(user);
+
+  signUpPayload.firstname = firstname.value;
+  signUpPayload.lastname = lastname.value;
+  signUpPayload.email = email.value;
+  signUpPayload.password = password.value;
+  signUpPayload.passwordConfirm = confirmpassword.value;
+
+  baseService.setBaseURL(
+    "https://propernaijapoll.herokuapp.com//api/v1/auth/signup"
+  );
+  baseService.signUpMethod(signUpPayload);
 
   // try {
   //   const response = await fetch(
@@ -318,42 +396,3 @@ function isEmail(email) {
     email
   );
 }
-const baseService = {
-  baseURL: "",
-  setBaseURL: (url) => {
-    baseService.baseURL = url;
-  },
-  getAllMethod: async () => {
-    await fetch(baseService.baseURL)
-      .then((res) => res.text())
-      .then((res) => console.log(res));
-  },
-
-  signUpMethod: async (payload) => {
-    await fetch(baseService.baseURL, payload)
-      .then((res) => res.text())
-      .then((res) => console.log(res));
-  }
-
-};
-
-const signUpPayload = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  password: ""
-}
-
-async function getUser(req, res) {
-  const api = "https://naijapollbackend.herokuapp.com/";
-  // await fetch(api)
-  //   .then((res) => res.text())
-  //   .then((res) => console.log(res));
-  baseService.setBaseURL(api);
-  console.log(baseService.baseURL);
-  baseService.getAllMethod();
-}
-
-getUser();
-
-create
