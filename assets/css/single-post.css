@@ -371,6 +371,71 @@ a {
     font-weight: bold;
   }
   
+  footer {
+    background: #0a8057;
+    padding: 30px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+  }
+  
+  footer .brand {
+    display: flex;
+    align-items: center;
+  }
+
+  footer .brand img {
+    width: 3%;
+    margin-right: 8px;
+  }
+  
+  footer .link a {
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  a#mgt {
+    margin-top: 10px;
+  }
+  
+  footer .link {
+    width: 25%;
+  }
+  
+  footer .link h4 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  footer .link a {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 20px;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .socials {
+    display: flex;
+  }
+  
+  .socials img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    footer .link {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    footer .link:nth-child(3),
+    footer .link:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+  
   @media screen and (min-width: 800px) {
     nav{
       position: fixed;
